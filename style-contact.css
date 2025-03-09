@@ -1,0 +1,248 @@
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url("Coelogyne\ sparsa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;  
+}
+
+.content{
+    flex: 1;
+    min-height: calc(100vh - 120px);
+}
+
+.navbar {
+    background-color: #d5ba8f;
+    height: 70px;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px;
+    box-shadow: 0.5px 0.5px 0.5px;
+    overflow: hidden;
+    top: 0;
+}
+
+.nav-links a {
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 5px; 
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0px; 
+}
+
+.logo-container img {
+    max-height: 160px;
+    display: block;
+    width: auto;
+}
+
+.logo-container h1 {
+    margin: 0; 
+    padding: 0;
+    line-height: 1;
+    font-size: 24;
+    margin-left: -40px;
+}
+
+
+.logo {
+    padding-top: 20px;  
+}
+
+
+.site-name {
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 0px;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 20px; 
+}
+
+.icon-home {
+    padding-top: 20px;
+    width: 100px;  
+    height: auto;
+    border-bottom: 50px;
+    border-left: 100px;
+    background-color: #d5ba8f;
+}
+
+.icon-home:hover{
+    background-color:#e4c798
+}
+
+.icon-about {
+    padding-top: 36px;
+    width: 100px;  
+    height: 80px;
+    background-color: #d5ba8f;
+}
+
+.icon-about:hover{
+    background-color:#e4c798;
+}
+
+.icon-contact {
+    padding-inline: 0px;
+    width: 140px;  
+    height: auto;     
+    background-color: #d5ba8f;   
+}
+
+.icon-contact:hover{
+    background-color:#e4c798;
+}
+
+.box{
+    width: 700px;
+    background-color: #ebe2d2;
+    margin: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    height: auto;
+    display: flex;
+    flex: 1;
+    justify-content:center;
+    align-items:center;
+    margin-left: 200px;
+    margin-right: 100px;
+    padding: 70px;
+}
+
+hr{
+    width: 600px;
+    height: 3px;
+    background-color: #d5ba8f;
+}
+
+.contact-content1{
+    margin-left: 60px;
+    margin-right: 50px;
+    align-items: center;
+}
+
+.contact-content2{
+    padding-right: 310px;
+    font-size: 30px;
+}
+
+.inquire1{
+    padding-right: 180px;
+}
+
+.email-box1{
+    height: 20px;
+}
+
+.comment-box1{
+    height: 200px;
+    width: 400px
+}
+
+button{
+    width: 100px;
+    height: 40px;
+}
+
+button.hover{
+    background-color: #858484;
+}
+
+.social-links{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.icon-gmail{
+    height: auto;
+    width: 70px;
+    padding: 15px;
+}
+
+.icon-twitter-x{
+    height: auto;
+    width: 70px;
+    padding: 15px;
+}
+
+.icon-fb{
+    height: auto;
+    width: 70px;
+    padding: 15px;
+}
+
+.icon-ig{
+    height: auto;
+    width: 70px;
+    padding: 15px;
+}
+
+
+.team-content2{
+    justify-content: end;
+    margin-left: 650px;
+}
+
+footer{
+    position: fixed;
+    background: #222;
+    color: white;
+    text-align:center;
+    padding-top: 10px 0;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-left ul{
+    list-style-type: none;
+    background-color: #444444;
+}
+
+.footer-left a:hover{
+    background-color: #000000;
+}
+
+.footer-left a{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 15px;
+    color: aliceblue;
+    float: left;
+}
+
+.footer-left p{
+    margin-left: auto;
+    float: right;
+    padding-right: 30px;
+}
