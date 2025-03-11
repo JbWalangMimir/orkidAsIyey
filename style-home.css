@@ -19,18 +19,19 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;  
+    background-position: center; 
+    min-height: 100vh; 
 }
 
-.content{
-    flex: 1;
-    min-height: calc(100vh - 120px);
-    display: block;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.content {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: flex-start; /* Aligns content closer to the top */
+    text-align: center;
+    min-height: 80vh; /* Adjusted to reduce gap from navbar */
+    padding-top: 5px; /* Reduce spacing from navbar */
 }
-
 .navbar {
     background-color: #d5ba8f;
     height: 70px;
@@ -196,32 +197,28 @@ footer{
     color: aqua;
 }
 
-.search{
-    width: fit-content;
-    text-align: center;
+.search {
     display: flex;
-    gap: 10px;
-    display:inline-block;
-    flex-wrap: wrap;
     justify-content: center;
-    max-width: 100%;
     align-items: center;
-    margin: auto;
+    flex-wrap: nowrap;
+    gap: 5px;
+    width: 100%;
+    max-width: 600px;
+    margin: auto; /* Centers it horizontally */
 }
 
 
 
-.search-home{
-    flex: 1;
+.search-home {
+    width: 100%;
     max-width: 500px;
-    min-width: 200px;
-    width: 500px;
     height: 50px;
-    margin-left: 350px;
     border-radius: 20px;
     box-shadow: 10px 10px 15px 10px rgba(0, 0, 0, 0.5);
     outline: none;
 }
+
 
 input{
     padding-left: 20px;
@@ -229,31 +226,18 @@ input{
 }
 
 
-.search-img {
-    display: inline-block;
-    vertical-align: middle;
-    width: 45px;
-    height: 45px;
-    cursor: pointer;
-    background-color: #d5ba8f;
-    border-radius: 90px;
-    box-shadow: 10px 10px 15px 10px rgba(0, 0, 0, 0.5);
+.search-img, .camera-img {
+    display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.camera-img {
-    display: inline-block;
-    vertical-align: middle;
     width: 45px;
     height: 45px;
-    cursor: pointer;
-    background-color: #d5ba8f;
     border-radius: 90px;
     box-shadow: 10px 10px 15px 10px rgba(0, 0, 0, 0.5);
-    border:#444444;
-    border: thin;
+    cursor: pointer;
+    background-color: #d5ba8f;
 }
+
 
 .icon{
     background: none;
