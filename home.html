@@ -6,12 +6,13 @@
     <title>orkidAsIyey</title>  
     <link rel= "icon" type="image/jpg" href="Icons and logo images/logo mini.jpg">
     <link rel="stylesheet" href="style-home.css">
-     
+    <script src="pages.js"></script>
+    <script src="search.js" defer></script>
 </head>
 <body>  
     <div class="navbar">
         <div class="logo-container">
-            <img src="Icons and logo images/image_2025-03-03_090338535-removebg-preview.png" alt="Logo" class="logo">
+            <img src="Icons and logo images/main logo.png" alt="Logo" class="logo">
             <span class="site-name"><h1>orkidAsIyey</h1></span>
         </div>
     
@@ -22,19 +23,32 @@
         </div>
     </div>
     
-    <div class="content">
-        <div class="Description">
-            
-            <p class="text-box1">A website designed for providing taxonomic informations on the <i>Orchidaceae</i> family in the Philippines. Equipped with Artificial Intelligence, the website can provide answers to your questions. Whether it may be through text or image.</p>
-                <br>
-        <div class="search"></div>
-            <input type="text" id="mySearch" placeholder="Search a species or taxonomy data" class="search-home">
-            <img src="Icons and logo images/search.png" alt="Search" id="search-btn" class="search-img">
-            <img src="Icons and logo images/camera.image.png" alt="Search" id="search-image-btn" class="camera-img">
-           
-                                
-
+    <div class="Front-text">
+        <h1>Welcome, placeholder</h1>
+        <h5>sanssanssanssanssans</h5>
     </div>
+
+    <div class="Function-boxes">
+        <div class="search-function"><img src="Icons and logo images/search.png" class="search-img">
+            <h3 class="search-text">Search various orchids</h3>
+        </div>
+        <div class="image-function"><img src="Icons and logo images/camera.image.png" class="camera-img">
+            <h3 class="image-text">Identify orchids with images</h3>
+        </div>
+    </div>
+
+   
+    <!-- <div class="search-container">
+        <div class="search">
+            <div class="search-box"><input type="text" id="searchInput" autocomplete="off" placeholder="Search a species or taxonomy data" oninput="searchPages()" onkeydown="searchPages(event)"/></div>
+            
+        
+            <ul id="results"></ul>    
+        </div>
+    </div> -->
+    
+
+
 
     </div>
 
@@ -49,7 +63,37 @@
 
         </footer>
     
-        
-    <script src="index.js"></script>     
+    
+
+    </style>
+    <script src="index.js"></script>  
+       
+    <!-- <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  chat-icon="https:&#x2F;&#x2F;res.cloudinary.com&#x2F;donwizsnz&#x2F;image&#x2F;upload&#x2F;v1741867951&#x2F;wuddt3vdmjy1ojas6mjj.png"
+  intent="WELCOME"
+  chat-title="Mela"
+  agent-id="28ed9fec-6e0d-4962-b0df-fcda5f20c129"
+  language-code="en"
+  style="position: fixed; bottom: 100px; right: 30px;"
+></df-messenger>
+    <style>
+        df-messenger {
+            --df-messenger-bot-message: #f8aee4;
+            --df-messenger-button-titlebar-color:   #d5ba8f;
+            --df-messenger-chat-background-color: #ffffff;
+            --df-messenger-font-color: white;
+            --df-messenger-send-icon: #00ff73;
+            --df-messenger-user-message: #479b3d;
+            --df-messenger-chat-bubble-icon-size: 36px;
+            --df-messenger-chat-bubble-size: 64px;
+
+        }
+
+    </style> -->
+    
+    
+
+
 </body>
 </html>

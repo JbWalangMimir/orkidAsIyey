@@ -29,15 +29,17 @@ body{
 
 .navbar {
     background-color: #d5ba8f;
-    height: 70px;
+    height: 7vh;
     position: sticky;
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     box-shadow: 0.5px 0.5px 0.5px;
+    width: 100%;
     overflow: hidden;
-    top: 0;
+    
 }
 
 .nav-links a {
@@ -50,93 +52,64 @@ body{
     display: flex;
     align-items: center;
     gap: 0px; 
+    margin-left: 30px;
 }
 
 .logo-container img {
-    max-height: 160px;
     display: block;
-    width: auto;
+    width: 100%;
+    max-width: 100px;
 }
 
 .logo-container h1 {
     margin: 0; 
     padding: 0;
     line-height: 1;
-    font-size: 24;
-    margin-left: -40px;
+    font-size: 3vw;
+    font-size: 5vh;
+    margin-left: -10px;
+    
 }
-
-
-.logo {
-    padding-top: 20px;  
-}
-
-
-.site-name {
-    font-size: 24px;
-    font-weight: bold;
-    padding-left: 0px;
-}
-
 
 .nav-links {
     display: flex;
-    gap: 20px; 
+    gap: 5px; 
+    size: 100%;
 }
 
-.icon-home {
-    padding-top: 20px;
-    width: 100px;  
+.icon-home, .icon-about, .icon-contact {
+    padding-top: 10px;
+    width: 100%;
+    max-width: 100px;
     height: auto;
-    border-bottom: 50px;
-    border-left: 100px;
     background-color: #d5ba8f;
+
 }
 
-.icon-home:hover{
+.icon-home:hover, .icon-about:hover, .icon-contact:hover {
     background-color:#e4c798
 }
 
-.icon-about {
-    padding-top: 36px;
-    width: 100px;  
-    height: 80px;
-    background-color: #d5ba8f;
-}
-
-.icon-about:hover{
-    background-color:#e4c798;
-}
-
-.icon-contact {
-    padding-inline: 0px;
-    width: 140px;  
-    height: auto;     
-    background-color: #d5ba8f;   
-}
-
-.icon-contact:hover{
-    background-color:#e4c798;
-}
-
-.box{
-    width: 700px;
+.box {
+    width: 90%; 
+    max-width: 700px; 
+    min-width: 250px; 
+    min-height: 50px; 
+    height: auto; 
     background-color: #ebe2d2;
-    margin: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    flex-direction: column;
-    height: auto;
     display: flex;
-    flex: 1;
-    justify-content:center;
-    align-items:center;
-    margin-left: 200px;
-    margin-right: 100px;
-    padding: 70px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto; 
+    padding: 5vw; 
+    resize: vertical; 
 }
+
 
 hr{
-    width: 600px;
+    width: 100%;
     height: 3px;
     background-color: #d5ba8f;
 }
@@ -182,25 +155,25 @@ button.hover{
 
 .icon-gmail{
     height: auto;
-    width: 70px;
+    max-width: 70px;
     padding: 15px;
 }
 
 .icon-twitter-x{
     height: auto;
-    width: 70px;
+    max-width: 70px;
     padding: 15px;
 }
 
 .icon-fb{
     height: auto;
-    width: 70px;
+    max-width: 70px;
     padding: 15px;
 }
 
 .icon-ig{
     height: auto;
-    width: 70px;
+    max-width: 70px;
     padding: 15px;
 }
 

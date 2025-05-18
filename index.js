@@ -10,3 +10,8 @@ document.querySelectorAll("a").forEach(link => {
         }, 500); // Match transition time
     });
 });
+
+function toggleDropdown() {
+    const dropdown = document.getElementById('classificationDropdown');
+    dropdown.classList.toggle('show');
+}
