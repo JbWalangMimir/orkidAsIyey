@@ -259,12 +259,22 @@ footer {
     font-size: 10px;
   }
   .logo-container h1{
-    font-size: 10px;
+    font-size: 30px;
   }
 
   .logo-container{
     margin-left: 0px;
   }
+
+  .navbar{
+    flex-direction: column;
+    height: auto;
+  }
+
+  .footer{
+    flex-direction: column;
+  }
+
 } 
 
 
