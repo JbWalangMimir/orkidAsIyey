@@ -211,6 +211,13 @@ footer{
     height: 40vh;
 }
 
+.references {
+    background: #fefefe;
+    width: 80vw;
+    max-width: 950px;
+    height: 20vh;
+}
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -229,7 +236,14 @@ footer{
     width: 90vw;
     align-items: center; 
   }
-}
+  .references{
+    max-width: 330px;
+  }
+
+  .icon-home, .icon-about, .icon-contact {
+    max-width: 50px;
+  }
+} 
 
 
 
