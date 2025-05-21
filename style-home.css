@@ -179,6 +179,7 @@ footer{
     display: flex;
     gap: 10px;
     justify-content: center;
+    flex-direction: row;
 }
 
 .search-function{
