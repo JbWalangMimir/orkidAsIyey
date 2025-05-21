@@ -140,7 +140,7 @@ footer {
 .footer-right {
   display: flex;
   align-items: center;
-  margin-left: auto; /* This pushes it to the right in the flex container */
+  margin-left: auto; 
 }
 
 .footer-right p {
@@ -255,11 +255,11 @@ footer {
   .footer-left a{
     font-size: 10px;
   }
-  .footer-left p {
+  .footer-right p {
     font-size: 10px;
   }
   .logo-container h1{
-    font-size: 30px;
+    font-size: 10px;
   }
 
   .logo-container{
@@ -267,14 +267,14 @@ footer {
   }
 
   .navbar{
-    flex-direction: column;
-    height: auto;
+    max-height: 70px;
   }
 
-  .footer{
+  .footer-container{
     flex-direction: column;
+    position: static;
+    max-height: 20px;
   }
-
 } 
 
 
