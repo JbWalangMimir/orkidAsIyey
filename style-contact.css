@@ -209,12 +209,12 @@ footer {
     margin: 10px;
   }
   #myEmail{
-    max-width: 340px;
+    max-width: 200px;
     width: 100%;
   }
   #myComment{
-    max-width: 340px;
-    min-width: 340px;
+    max-width: 200px;
+    min-width: 200px;
     max-height: 120px;
     min-height: 120px;
     width: 100%;
