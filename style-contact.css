@@ -187,10 +187,7 @@ footer {
   .social-links {
     max-width: 20px;
   }
-  .inquire1{
-    max-width: 20px;
-  }
-
+  
   .comment-box1{
     max-width: 30px;
   }
@@ -209,27 +206,15 @@ footer {
     margin: 10px;
   }
   #myEmail{
-    max-width: 200px;
-    width: 100%;
+    max-width: 330px;
   }
   #myComment{
-    max-width: 200px;
-    min-width: 200px;
+    max-width: 330px;
+    min-width: 280px;
     max-height: 120px;
-    min-height: 120px;
-    width: 100%;
+    min-height: 110px;
   }
-  .email-box1{
-    max-width: 200px;
-    width: 100%;
-  }
-  .comment-box1{
-    max-width: 200px;
-    min-width: 200px;
-    max-height: 120px;
-    min-height: 120px;
-    width: 100%;
-  }
+  
 } 
 
 .box {
@@ -295,6 +280,7 @@ hr{
   justify-self: center;
   max-width: 436px;
   min-width: 436px;
+  min-height: 120px;
   width: 100%;
   border: 2px solid #222;
   margin-left: 20px;
@@ -304,9 +290,6 @@ hr{
   outline: none;
 }
 
-.comment-box1::placeholder {
-  text-align: top;
-}
   
 
 button{
