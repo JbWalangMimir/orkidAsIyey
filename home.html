@@ -29,23 +29,27 @@
     </div>
 
     <div class="Function-boxes">
-        <div class="search-function"><img src="Icons and logo images/search.png" class="search-img">
-            <h3 class="search-text">Search various orchids</h3>
+        <div class="search-container">
+            <div class="search">
+                <div class="search-box"><input type="text" id="searchInput" autocomplete="off" placeholder="Search a species or taxonomy data..." oninput="searchPages()" onkeydown="searchPages(event)"/></div>
+            
+        
+                <ul id="results"></ul>    
+            </div>
         </div>
         <div class="image-function"><img src="Icons and logo images/camera.image.png" class="camera-img">
             <h3 class="image-text">Identify orchids with images</h3>
         </div>
+        <!-- <div class="search-function"><img src="Icons and logo images/search.png" class="search-img">
+            <h3 class="search-text">Search various orchids</h3>
+        </div>
+        <div class="image-function"><img src="Icons and logo images/camera.image.png" class="camera-img">
+            <h3 class="image-text">Identify orchids with images</h3>
+        </div> -->
     </div>
 
    
-    <!-- <div class="search-container">
-        <div class="search">
-            <div class="search-box"><input type="text" id="searchInput" autocomplete="off" placeholder="Search a species or taxonomy data" oninput="searchPages()" onkeydown="searchPages(event)"/></div>
-            
-        
-            <ul id="results"></ul>    
-        </div>
-    </div> -->
+    
     
 
 

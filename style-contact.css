@@ -150,101 +150,9 @@ footer {
 }
 
 
-.content {
-  padding: 40px 20px;
-  min-height: 70vh;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
-.column-box {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.box {
-  background: #fff;
-  border: 1px solid #999;
-  padding: 15px;
-  min-width: 150px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.img-box {
-  background: #ccc;
-  max-width: 300px;
-  max-height: 600px;
-  height: 40vh;
-  width: 20vw;
-}
-
-.img-species{
-  width: 100%;
-  height: auto;      
-  object-fit: cover; 
-  display: block;    
-  max-width: 100%;   
-  max-height: 100%;  
-}
-
-.header {
-  font-weight: bold;
-  width: 20vw;
-  max-width: 300px;
-  height: 5vh;
-}
-
-.data {
-  background: #fefefe;
-  max-width: 300px;
-  max-height: 270px;
-  height: 40vh;
-  width: 20vw;
-}
-
-.text {
-    background: #fefefe;
-    width: 30vw;
-    max-width: 300px;
-    height: 40vh;
-}
-
-.references {
-    background: #fefefe;
-    width: 80vw;
-    max-width: 950px;
-    height: 20vh;
-}
 
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .img-box,
-  .header,
-  .data,
-  .text {
-    width: 90vw;
-  }
-
-  .column-box {
-    flex-direction: column;
-    width: 90vw;
-    align-items: center; 
-  }
-  .references{
-    max-width: 330px;
-  }
+  
 
   .icon-home, .icon-about, .icon-contact {
     max-width: 70px;
@@ -259,7 +167,7 @@ footer {
     font-size: 10px;
   }
   .logo-container h1{
-    font-size: 10px;
+    font-size: 20px;
   }
 
   .logo-container{
@@ -275,20 +183,47 @@ footer {
     position: static;
     max-height: 20px;
   }
+  
+  .social-links {
+    max-width: 20px;
+  }
+  .inquire1{
+    max-width: 20px;
+  }
+
+  .comment-box1{
+    max-width: 30px;
+  }
+  #long-box{
+    max-width: 400px;
+  }
+
+  .icon-gmail, .icon-twitter-x, .icon-fb, .icon-ig{
+    max-width: 50px;
+  }
+
+  .inquire1{
+    max-width:300px;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+  }
+  #myEmail{
+    max-width: 340px;
+    width: 100%;
+  }
+  #myComment{
+    max-width: 340px;
+    min-width: 340px;
+    max-height: 120px;
+    min-height: 120px;
+    width: 100%;
+  }
 } 
-
-.content{
-    flex: 1;
-    min-height: calc(100vh - 120px);
-}
-
-
 
 .box {
     width: 90%; 
-    max-width: 700px; 
-    min-width: 250px; 
-    min-height: 50px; 
+    max-width: 700px;   
     height: auto; 
     background-color: #ebe2d2;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
@@ -298,7 +233,6 @@ footer {
     align-items: center;
     margin: 10px auto; 
     padding: 5vw; 
-    resize: vertical; 
 }
 
 
@@ -315,26 +249,62 @@ hr{
 }
 
 .contact-content2{
-    padding-right: 310px;
     font-size: 30px;
 }
 
 .inquire1{
-    padding-right: 180px;
+  background-color: white;
+  max-width: 500px;
+  width: 100%;
+  height: 300px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  border: #222 solid 1px;
+  border-radius: 5px;
+
 }
 
 .email-box1{
-    height: 20px;
+  height: 20px;
+  justify-self: center;
+  max-width: 440px;
+  width: 100%;
+  border: none;
+  padding: 10px;;
+  border-bottom: #222 solid 2px;
+  outline: none;
+  margin-left: 20px;
+  margin-top: 10px;
 }
+
 
 .comment-box1{
-    height: 200px;
-    width: 400px
+  height: 120px;
+  justify-self: center;
+  max-width: 436px;
+  min-width: 436px;
+  width: 100%;
+  border: 2px solid #222;
+  margin-left: 20px;
+  margin-top: 5px;
+  padding: 10px;;
+  border-bottom: #222 solid 2px;
+  outline: none;
 }
 
+.comment-box1::placeholder {
+  text-align: top;
+}
+  
+
 button{
-    width: 100px;
-    height: 40px;
+  margin: 20px;
+  max-height: 40px;
+  max-width: 100px;
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
 }
 
 button.hover{
@@ -348,25 +318,21 @@ button.hover{
 }
 
 .icon-gmail{
-    height: auto;
     max-width: 70px;
     padding: 15px;
 }
 
 .icon-twitter-x{
-    height: auto;
     max-width: 70px;
     padding: 15px;
 }
 
 .icon-fb{
-    height: auto;
     max-width: 70px;
     padding: 15px;
 }
 
 .icon-ig{
-    height: auto;
     max-width: 70px;
     padding: 15px;
 }
