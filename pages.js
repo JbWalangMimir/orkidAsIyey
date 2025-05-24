@@ -1,5 +1,5 @@
 const pages = [
-  { title: "Orchidaceae", url: "Orchidaceae.html", tags: ["Orchid"] },
+  { title: "Grammatophyllum multiflorum", url: "Orchidaceae.html", tags: ["Orchid"] },
   { title: "Model Specifics", url: "Model.html", tags: ["AI", "Model", "CNN"] },
   { title: "Phalaenopsis aphrodite", url: "Phalaenopsis aphrodite", tags: ["chemistry periodic"] },
   { title: "Vanda sanderiana", url: "Vanda sanderiana.html", tags: ["Vanda", "Waling-waling"] },

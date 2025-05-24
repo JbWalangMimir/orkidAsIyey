@@ -63,4 +63,5 @@ function uploadImage() {
     };
     
     img.src = imgLink;
+    
 }
