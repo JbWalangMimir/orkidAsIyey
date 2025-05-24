@@ -34,3 +34,26 @@ document.addEventListener("click", function(event) {
     resultBox.style.display = "none";
   }
 });
+
+const dfMessenger = document.querySelector('df-messenger');
+dfMessenger.addEventListener('df-messenger-loaded', function() {
+    // Position the widget icon (bauble)
+    const dfIcon = dfMessenger?.shadowRoot?.querySelector("#widgetIcon");
+    if (dfIcon) {
+        dfIcon.style.bottom = "40px";
+        dfIcon.style.right = "10px"; // Adjust right position if needed
+    }
+
+    // Position the chat window to match
+    setTimeout(() => {
+        const dfMessengerChat = dfMessenger?.shadowRoot?.querySelector("df-messenger-chat");
+        if (dfMessengerChat) {
+            const chatWrapper = dfMessengerChat.shadowRoot.querySelector(".chat-wrapper");
+            if (chatWrapper) {
+                chatWrapper.style.bottom = "calc(70px + 60px)"; // 60px is roughly the height of the icon
+                chatWrapper.style.right = "20px"; // Match the icon's right position
+            }
+            dfMessengerChat.openChat();
+        }
+    }, 500);
+});

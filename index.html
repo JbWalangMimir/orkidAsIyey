@@ -17,7 +17,7 @@
         </div>
     
         <div class="nav-links">
-            <a href="home.html"><img src="Icons and logo images/home.png" class="icon-home"></a>
+            <a href="index.html"><img src="Icons and logo images/home.png" class="icon-home"></a>
             <a href="about.html"><img src="Icons and logo images/about.png" class="icon-about"></a>
             <a href="contact.html"><img src="Icons and logo images/contact.png" class="icon-contact"></a>
         </div>
@@ -37,8 +37,18 @@
                 <ul id="results"></ul>    
             </div>
         </div>
-        <div class="image-function"><img src="Icons and logo images/camera.image.png" class="camera-img">
-            <h3 class="image-text">Identify orchids with images</h3>
+        <div class="image-function">
+            <label for="input-file" id="drop-area">
+                <input type="file" accept="image/*" id="input-file" hidden>
+                <div id="img-view">
+                    <img src="Icons and logo images/camera.image.png" class="camera-img">
+                    <h3 class="image-text">Identify orchids with images</h3>
+                <span>Upload any images from desktop or mobile devices</span>
+                </div>
+            </label>
+        </div>
+            
+            
         </div>
         <!-- <div class="search-function"><img src="Icons and logo images/search.png" class="search-img">
             <h3 class="search-text">Search various orchids</h3>
@@ -73,7 +83,7 @@
     </style>
     <script src="index.js"></script>  
        
-    <!-- <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 <df-messenger
   chat-icon="https:&#x2F;&#x2F;res.cloudinary.com&#x2F;donwizsnz&#x2F;image&#x2F;upload&#x2F;v1741867951&#x2F;wuddt3vdmjy1ojas6mjj.png"
   intent="WELCOME"
@@ -95,7 +105,7 @@
 
         }
 
-    </style> -->
+    </style> 
     
     
 

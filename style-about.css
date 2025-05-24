@@ -244,19 +244,3 @@ hr{
   }
 } 
 
-@media (prefers-color-scheme: dark) {
-  body, html {
-    background-color: #ffffff !important;
-    color: #000000 !important;
-  }
-
-  /* Example: override any other specific elements */
-  .navbar,
-  .icon-home,
-  .icon-about,
-  .icon-contact {
-    background-color: #d5ba8f !important;
-    color: #000000 !important;
-  }
-  
-}

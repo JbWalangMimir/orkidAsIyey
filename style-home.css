@@ -159,7 +159,7 @@ footer {
 .Front-text h1{
     color: white;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 20px;
     font-family: sans-serif;
 }
 
@@ -169,36 +169,71 @@ footer {
     font-family: sans-serif;
 }
 
-.Function-boxes{
-    display: flex;
-    gap: 10px;
+.Function-boxes {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+
+/* Remove fixed dimensions from containers */
+.image-function {
+    background-color: #ebe2d2;
+    border: 2px solid #222;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    display: inline-flex; /* Changed to inline-flex */
     justify-content: center;
+    padding: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+#drop-area {
+    background: #ebe2d2;
+    border-radius: 20px;
+    display: inline-block; /* Changed to inline-block */
+    position: relative;
+}
+
+#img-view {
+    border: 2px dashed #d5ba8f;
+    border-radius: 20px;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    box-sizing: border-box;
 }
 
-.image-function{
-    width: 600px;
-    height: 300px;
-    background-color: #ebe2d2; 
-    border: 1px solid #222;
-    text-align: center;
-    border-radius: 10px;
-    border: #222 solid 2px;
-}
-
-.image-function:hover, .search-function:hover{
-    background-color: #ebdec9; 
+/* When image is uploaded */
+#img-view.has-image {
+    padding: 0;
+    border: 2px solid #d5ba8f;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .camera-img{
-    align-items: center;
-    margin-top: 30px;
-    max-width: 200px;
+  max-width: 300px;
 }
 
-.image-text{
-    margin: 0px;
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .image-function {
+        padding: 15px;
+        margin-bottom: 50px;
+    }
+    
+    #img-view {
+        padding: 15px;
+    }
 }
 
 .search {
