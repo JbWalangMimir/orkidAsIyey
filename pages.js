@@ -5,3 +5,8 @@ const pages = [
   { title: "Vanda sanderiana", url: "Vanda sanderiana.html", tags: ["Vanda", "Waling-waling"] },
   { title: "Arundina graminifolia", url: "Arundina graminifolia.html", tags: ["Arundina"] },
 ];
+
+function searchPages(event) {
+  console.log("Current pages data:", pages); // 👈 Check this in browser console
+  // Rest of your code...
+}
