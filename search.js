@@ -35,25 +35,4 @@ document.addEventListener("click", function(event) {
   }
 });
 
-const dfMessenger = document.querySelector('df-messenger');
-dfMessenger.addEventListener('df-messenger-loaded', function() {
-    // Position the widget icon (bauble)
-    const dfIcon = dfMessenger?.shadowRoot?.querySelector("#widgetIcon");
-    if (dfIcon) {
-        dfIcon.style.bottom = "30px";
-        dfIcon.style.right = "0px"; 
-    }
 
-    
-    setTimeout(() => {
-        const dfMessengerChat = dfMessenger?.shadowRoot?.querySelector("df-messenger-chat");
-        if (dfMessengerChat) {
-            const chatWrapper = dfMessengerChat.shadowRoot.querySelector(".chat-wrapper");
-            if (chatWrapper) {
-                chatWrapper.style.bottom = "calc(5px + 38px)"; // 60px is roughly the height of the icon
-                chatWrapper.style.right = "80px"; // Match the icon's right position
-            }
-            dfMessengerChat.openChat();
-        }
-    }, 500);
-});
