@@ -227,12 +227,33 @@ footer {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Media queries for dropbox */
+@media screen and (max-width: 768px) {
+  .dropbox {
+    padding: 20px;
+    max-width: 350px;
+  }
+}
 
+@media screen and (max-width: 480px) {
+  .dropbox {
+    padding: 15px;
+    max-width: 300px;
+  }
+}
 
-
-
-
-
+@media screen and (max-width: 384px) {
+  .dropbox {
+    padding: 10px;
+    max-width: 280px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .camera-icon {
+    max-width: 100px;
+  }
+}
 
 .search {
     display: flex;
