@@ -16,11 +16,7 @@ const dropbox = document.getElementById("dropbox");
 const preview = document.getElementById("preview");
 const resultsBox = document.getElementById("prediction-results");
 
-dropbox.addEventListener("mousedown", (e) => {
-  e.preventDefault(); // prevent accidental focus stealing
-  uploadInput.value = '';
-  uploadInput.click();
-});
+dropbox.addEventListener("click", () => uploadInput.click());
 
 
 // File selected — handle upload
