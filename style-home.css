@@ -309,6 +309,14 @@ a:hover {
     background: none;
 }
 
+@media screen and (max-width: 768px) {
+  df-messenger {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 0 !important;
+  }
+}
+
 @media (max-width: 768px) {
   .icon-home, .icon-about, .icon-contact {
     max-width: 70px;
