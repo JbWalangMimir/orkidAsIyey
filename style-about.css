@@ -15,7 +15,7 @@ body{
     flex-direction: column;
     background: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-        url("Phalaenopsis\ philippinensis.jpg");
+        url("Phalaenopsis\ aphrodite.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -178,24 +178,31 @@ hr{
 }
 
 .About1{
-    margin-left: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 .about-content1{
-    padding-left: 50px;
-    margin-right: 35px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .Purpose1{
-    margin-left: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .purpose-content1{
-    padding-left: 50px;
-    margin-right: 35px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.Team1{
+/* .Team1{
     margin-left: 30px;
 }
 
@@ -210,7 +217,7 @@ hr{
 
 .team-content2{
     padding-left: 10%;
-}
+} */
 
 
 @media (max-width: 768px) {
@@ -246,7 +253,18 @@ hr{
   }
 
   .box{
-    max-width: 400px;
+    max-width: 300px !important;
   }
+  .about-content1 p{
+    text-align: justify;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .purpose-content1{
+    text-align: justify;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 } 
 
