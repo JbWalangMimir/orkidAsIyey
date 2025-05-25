@@ -15,7 +15,7 @@ body{
     flex-direction: column;
     background: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-        url("Phalaenopsis_amabilis.jpg");
+        url("Phalaenopsis%20amabilis.jpg")
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
