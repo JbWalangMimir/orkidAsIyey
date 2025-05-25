@@ -27,14 +27,12 @@ function handleFileUpload() {
     return;
   }
 
-  
   const reader = new FileReader();
   reader.onload = () => {
-    preview.innerHTML = <img src="${reader.result}" style="max-width: 100%; border-radius: 10px;" />;
+    preview.innerHTML = `<img src="${reader.result}" style="max-width: 100%; border-radius: 10px;" />`;
   };
   reader.readAsDataURL(file);
 
-  
   const formData = new FormData();
   formData.append("file", file);
 
@@ -64,15 +62,14 @@ function showPredictions(predictions) {
     resultsBox.innerHTML = "<h3>Top 5 Predictions:</h3>";
     predictions.forEach((pred, index) => {
       const line = document.createElement("p");
-      line.textContent = ${index + 1}. ${pred.class} — ${(pred.probability * 100).toFixed(2)}%;
+      line.textContent = `${index + 1}. ${pred.class} — ${(pred.probability * 100).toFixed(2)}%`;
       resultsBox.appendChild(line);
     });
   }
 
-  resultsBox.style.display = "block"; 
+  resultsBox.style.display = "block";
   resultsBox.scrollIntoView({ behavior: "smooth", block: "start" });
 }
-
 
 document.addEventListener("paste", (event) => {
   const items = (event.clipboardData || window.clipboardData).items;
@@ -89,19 +86,11 @@ document.addEventListener("paste", (event) => {
   }
 });
 
-
 function createFileList(file) {
   const dataTransfer = new DataTransfer();
   dataTransfer.items.add(file);
   return dataTransfer.files;
-} and here
-<div class="search-container">
-            <div class="search">
-                <div class="search-box"><input type="text" id="searchInput" autocomplete="off" placeholder="Search a species or taxonomy data..." oninput="searchPages()" onkeydown="searchPages(event)"/></div>
-            
-        
-                <ul id="results"></ul>    
-            </div>
-        </div>
+}
+
 
 
