@@ -15,7 +15,7 @@ body{
     flex-direction: column;
     background: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-        url("Phalaenopsis\ philippinensis.jpg");
+        url("Phalaenopsis\ amabilis.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -85,11 +85,10 @@ body{
 }
 
 df-messenger {
-  position: fixed !important;
-  bottom: 60px !important; /* move it up by footer height */
-  right: 24px !important; /* default right positioning */
-  z-index: 1100 !important; /* above footer */
-  transition: bottom 0.3s ease;
+  /* Ensure it doesn't cover interactive elements */
+  bottom: 80px !important; /* Increase if footer is taller */
+  right: 16px !important;
+  z-index: 100 !important; /* Lower than navbar/footer but still visible */
 }
 
 
@@ -170,7 +169,7 @@ footer {
     text-align: center;
 }
 
-.Front-text h5{
+.Front-text h2{
     color: white;
     align-content: center;
     font-family: sans-serif;
