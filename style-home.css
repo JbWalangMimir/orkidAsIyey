@@ -85,10 +85,11 @@ body{
 }
 
 df-messenger {
-  /* Ensure it doesn't cover interactive elements */
-  bottom: 80px !important; /* Increase if footer is taller */
-  right: 16px !important;
-  z-index: 100 !important; /* Lower than navbar/footer but still visible */
+  position: fixed !important;
+  bottom: 60px !important; /* move it up by footer height */
+  right: 24px !important; /* default right positioning */
+  z-index: 1100 !important; /* above footer */
+  transition: bottom 0.3s ease;
 }
 
 
