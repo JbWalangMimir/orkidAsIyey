@@ -24,8 +24,8 @@
     </div>
     
     <div class="Front-text">
-        <h1>Welcome, placeholder</h1>
-        <h5>sanssanssanssanssans</h5>
+        <h1>Philippine <i>Orchid</i> Classifier</h1>
+        <h5>Search Engine for Taxonomic Classification of <i>Orchidaceae</i> in the Philippines</h5>
     </div>
 
     <div class="Function-boxes">
@@ -37,16 +37,17 @@
                 <ul id="results"></ul>    
             </div>
         </div>
-        <div class="image-function">
-            <label for="input-file" id="drop-area">
-                <input type="file" accept="image/*" id="input-file" hidden>
-                <div id="img-view">
-                    <img src="Icons and logo images/camera.image.png" class="camera-img">
-                    <h3 class="image-text">Identify orchids with images</h3>
-                <span>Upload any images from desktop or mobile devices</span>
-                </div>
-            </label>
-        </div>
+        <div class="upload-box">
+  <label for="orchid-upload" class="dropbox" id="dropbox">
+    <input type="file" id="orchid-upload" accept="image/*" hidden />
+    <div id="preview">
+      <img src="Icons and logo images/camera.image.png" class="camera-icon" />
+      <p>Click or Drag & Drop to Identify Orchid</p>
+    </div>
+  </label>
+  <div id="prediction-results"></div>
+</div>
+
             
             
         </div>

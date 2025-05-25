@@ -11,57 +11,89 @@ document.querySelectorAll("a").forEach(link => {
     });
 });
 
-const dropArea = document.getElementById("drop-area");
-const inputFile = document.getElementById("input-file");
-const imageView = document.getElementById("img-view");
+const uploadInput = document.getElementById("orchid-upload");
+const dropbox = document.getElementById("dropbox");
+const preview = document.getElementById("preview");
+const resultsBox = document.getElementById("prediction-results");
 
-inputFile.addEventListener("change", uploadImage);
+dropbox.addEventListener("click", () => uploadInput.click());
 
-function uploadImage() {
-    const file = inputFile.files[0];
-    if (!file) return;
-    
-    const imgLink = URL.createObjectURL(file);
-    const img = new Image();
-    
-    img.onload = function() {
-        // Add class to indicate we have an image
-        imageView.classList.add('has-image');
-        
-        // Set the image as background
-        imageView.style.backgroundImage = `url(${imgLink})`;
-        
-        // Hide the placeholder elements
-        const placeholderElements = imageView.querySelectorAll('.camera-img, .image-text, span');
-        placeholderElements.forEach(el => el.style.display = 'none');
-        
-        // Adjust container dimensions to match image
-        const maxWidth = 600; // Maximum width you want
-        const maxHeight = 500; // Maximum height you want
-        
-        // Calculate dimensions while maintaining aspect ratio
-        let width = img.width;
-        let height = img.height;
-        
-        if (width > maxWidth) {
-            const ratio = maxWidth / width;
-            width = maxWidth;
-            height = height * ratio;
-        }
-        
-        if (height > maxHeight) {
-            const ratio = maxHeight / height;
-            height = maxHeight;
-            width = width * ratio;
-        }
-        
-        // Apply the calculated dimensions
-        imageView.style.width = `${width}px`;
-        imageView.style.height = `${height}px`;
-        
-        // The drop area and parent containers will now shrink to fit
-    };
-    
-    img.src = imgLink;
-    
+uploadInput.addEventListener("change", handleFileUpload);
+
+function handleFileUpload() {
+  const file = uploadInput.files[0];
+  if (!file || !file.type.startsWith("image/")) {
+    alert("Please upload a valid image.");
+    return;
+  }
+
+  // Preview the image
+  const reader = new FileReader();
+  reader.onload = () => {
+    preview.innerHTML = `<img src="${reader.result}" style="max-width: 100%; border-radius: 10px;" />`;
+  };
+  reader.readAsDataURL(file);
+
+  // Send to API
+  const formData = new FormData();
+  formData.append("file", file);
+
+  fetch("https://efficientnet-api.onrender.com/predict", {
+    method: "POST",
+    body: formData
+  })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to get prediction");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      showPredictions(data.predictions);
+    })
+    .catch((err) => {
+      console.error("Prediction error:", err);
+      resultsBox.innerHTML = "<p style='color:red;'>Failed to get prediction. Try again.</p>";
+    });
 }
+
+function showPredictions(predictions) {
+  if (!predictions || predictions.length === 0) {
+    resultsBox.innerHTML = "<p>No predictions found.</p>";
+  } else {
+    resultsBox.innerHTML = "<h3>Top 5 Predictions:</h3>";
+    predictions.forEach((pred, index) => {
+      const line = document.createElement("p");
+      line.textContent = `${index + 1}. ${pred.class} — ${(pred.probability * 100).toFixed(2)}%`;
+      resultsBox.appendChild(line);
+    });
+  }
+
+  resultsBox.style.display = "block"; // 
+  resultsBox.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+// Support paste event globally
+document.addEventListener("paste", (event) => {
+  const items = (event.clipboardData || window.clipboardData).items;
+  for (let item of items) {
+    if (item.type.startsWith("image/")) {
+      const file = item.getAsFile();
+      if (file) {
+        // Set the file programmatically and call your upload handler
+        uploadInput.files = createFileList(file);
+        handleFileUpload();
+      }
+      event.preventDefault();
+      break;
+    }
+  }
+});
+
+// Helper to create a DataTransfer/FileList object from a single file
+function createFileList(file) {
+  const dataTransfer = new DataTransfer();
+  dataTransfer.items.add(file);
+  return dataTransfer.files;
+}
+

@@ -88,7 +88,7 @@ body{
 
 
 footer {
-    position: fixed;
+    position: static;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -231,7 +231,7 @@ footer {
     background: #fefefe;
     width: 30vw;
     max-width: 300px;
-    height: 40vh;
+    height: 40vh auto;
 }
 
 .references {
