@@ -196,8 +196,6 @@ footer {
   align-items: center;
   justify-content: center;
   place-items: center;
-  margin-top: 75px;
-  margin-bottom: 75px;
 }
 
 .header {
@@ -242,18 +240,12 @@ footer {
     max-width: 950px;
     height: 20vh;
     padding: 20px;
-    margin-bottom: 10px;
 }
 
-.references ul{
+
+.references ul {
   list-style-type: none;
 }
-
-df-messenger {
-  bottom: 60px !important;
-}
-
-
 
 @media (max-width: 768px) {
   .container {

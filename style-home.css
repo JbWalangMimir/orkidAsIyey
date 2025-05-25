@@ -88,7 +88,7 @@ body{
 
 
 footer {
-    position: static;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -294,15 +294,6 @@ a {
 }
 a:hover {
   background-color: #444444;
-}
-
-.styled-scrollbars {
-    scrollbar-color: transparent transparent;
-    scrollbar-width: thin;
-    --scrollbar-background: var(--styled-scrollbar-background, var(--shreddit-content-background));
-}
-.styled-scrollbars.visible, .styled-scrollbars:hover {
-    scrollbar-color: var(--color-neutral-border) transparent;
 }
 
 .icon{
