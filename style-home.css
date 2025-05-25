@@ -23,13 +23,7 @@ body{
     overflow-x: hidden;
 }
 
-df-messenger {
-  position: fixed !important;
-  bottom: 60px !important; /* move it up by footer height */
-  right: 24px !important; /* default right positioning */
-  z-index: 1100 !important; /* above footer */
-  transition: bottom 0.3s ease;
-}
+
 
 .navbar {
     background-color: #d5ba8f;
@@ -90,7 +84,13 @@ df-messenger {
     background-color:#e4c798
 }
 
-
+df-messenger {
+  position: fixed !important;
+  bottom: 60px !important; /* move it up by footer height */
+  right: 24px !important; /* default right positioning */
+  z-index: 1100 !important; /* above footer */
+  transition: bottom 0.3s ease;
+}
 
 
 footer {
