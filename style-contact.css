@@ -173,7 +173,7 @@ footer {
     font-size: 8px;
   }
   .logo-container h1{
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .logo-container{
@@ -198,11 +198,15 @@ footer {
     max-width: 30px;
   }
   #long-box{
-    max-width: 400px;
+    max-width: 300px;
   }
 
-  .icon-gmail, .icon-twitter-x, .icon-fb, .icon-ig{
-    max-width: 50px;
+  .Contact h1{
+    font-size: 30px !important;
+  }
+
+  .icon-fb, .icon-ig, .icon-twitter-x{
+    max-width: 40px !important;
   }
 
   .inquire1{
@@ -211,12 +215,18 @@ footer {
     margin: 10px;
   }
   #myEmail{
-    max-width: 330px;
+    max-width: 240px !important;
   }
   #myComment{
-    max-width: 330px;
-    max-height: 120px;
+    max-width: 240px !important;
+    max-height: 120px!important;
   }
+  .contact-content1{
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    text-align: center;
+  }
+
   
 } 
 
@@ -243,7 +253,7 @@ hr{
 
 .contact-content1{
     margin-left: 60px;
-    margin-right: 50px;
+    margin-right: 60px;
     align-items: center;
 }
 
