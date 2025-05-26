@@ -1,5 +1,5 @@
 const pages = [
-  { title: "Acanthophippium sylhetense", url: "Phalaenopsis sylhetense.html", tags: ["Phalaenopsis", "sylhetense"] }, 
+  { title: "Acanthophippium sylhetense", url: "Acanthophippium sylhetense.html", tags: ["Phalaenopsis", "sylhetense"] }, 
   { title: "Aerides leeana", url: "Aerides leeana.html", tags: ["Aerides", "leeana"] },
   { title: "Amesiella monticola", url: "Amesiella monticola.html", tags: ["Amesiella", "monticola"] },
   { title: "Arundina graminifolia", url: "Arundina graminifolia.html", tags: ["Arundina", " graminifolia", "Bamboo Orchid"] },
