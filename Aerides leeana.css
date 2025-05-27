@@ -261,11 +261,15 @@ footer {
   list-style-type: none;
   gap: 10PX;
   font-weight: normal;
+    word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .references li a{
   text-decoration: none;
   color: rgb(0, 119, 255);
+    word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 @media (max-width: 768px) {
