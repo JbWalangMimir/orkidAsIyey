@@ -250,10 +250,12 @@ footer {
     background: #fefefe;
     width: 100%;
     max-width: 600px;
-    height: 28vh;
+    height: auto;
     padding: 20px;
     font-weight: bold;
     margin-bottom: 30px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 
@@ -262,11 +264,15 @@ footer {
   list-style-type: none;
   gap: 10PX;
   font-weight: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .references li a{
   text-decoration: none;
   color: rgb(0, 119, 255);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 @media (max-width: 768px) {
@@ -299,6 +305,8 @@ footer {
   .references{
     max-width: 290px;
     height: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   .box.text{
     width: 90vw; 
