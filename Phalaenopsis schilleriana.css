@@ -211,7 +211,7 @@ footer {
   width: 255px;
   height: 100%;
   font-weight: bold;
-  padding-bottom: 44px;
+  padding-bottom: 30px;
 }
 
 .data ul {
@@ -253,6 +253,8 @@ footer {
     height: 20vh;
     padding: 20px;
     font-weight: bold;
+    word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 
@@ -261,11 +263,15 @@ footer {
   list-style-type: none;
   gap: 10PX;
   font-weight: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .references li a{
   text-decoration: none;
   color: rgb(0, 119, 255);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 @media (max-width: 768px) {
@@ -300,8 +306,9 @@ footer {
     height: auto;
   }
   .box.text{
-    width: 90vw; 
+    width: 300px; 
     height: auto;
+    padding-bottom: 10px;
   }
 
   .icon-home, .icon-about, .icon-contact {
