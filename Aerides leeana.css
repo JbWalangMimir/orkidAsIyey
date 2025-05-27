@@ -200,18 +200,18 @@ footer {
 .header {
   font-weight: bold;
   width: 100%;
-  max-width: 255px;
+  max-width: 240px;
   height: 50px;
 }
 
 .data {
   background: #fefefe;
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 240px;
+  max-height: 370px;
   width: 255px;
-  height: 100%;
+  height: auto;
   font-weight: bold;
-  padding-bottom: 44px;
+  padding-bottom: 3px;
 }
 
 .data ul {
@@ -250,7 +250,7 @@ footer {
     background: #fefefe;
     width: 100%;
     max-width: 860px;
-    height: 20vh;
+    height: auto;
     padding: 20px;
     font-weight: bold;
 }
@@ -294,13 +294,14 @@ footer {
 
   .data{
     text-align: center;
+    max-width: 300px;
   }
   .references{
     max-width: 290px;
     height: auto;
   }
   .box.text{
-    width: 90vw; 
+    width: 300px; 
     height: auto;
   }
 
