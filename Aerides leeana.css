@@ -253,6 +253,10 @@ footer {
     height: auto;
     padding: 20px;
     font-weight: bold;
+     word-wrap: break-word;
+  overflow-wrap: break-word;
+    
+    
 }
 
 
