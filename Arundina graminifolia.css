@@ -254,6 +254,8 @@ footer {
     padding: 20px;
     font-weight: bold;
     margin-bottom: 30px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 
