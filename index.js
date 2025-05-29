@@ -1,13 +1,13 @@
 document.querySelectorAll("a").forEach(link => {
     link.addEventListener("click", function (e) {
-        e.preventDefault(); // Prevent instant navigation
+        e.preventDefault(); 
         const href = this.href;
 
-        document.body.classList.add("fade-out"); // Start fade effect
+        document.body.classList.add("fade-out"); 
 
         setTimeout(() => {
-            window.location.href = href; // Navigate after effect
-        }, 500); // Match transition time
+            window.location.href = href; 
+        }, 500); 
     });
 });
 
@@ -27,14 +27,12 @@ function handleFileUpload() {
     return;
   }
 
-  // Preview the image
   const reader = new FileReader();
   reader.onload = () => {
     preview.innerHTML = `<img src="${reader.result}" style="max-width: 100%; border-radius: 10px;" />`;
   };
   reader.readAsDataURL(file);
 
-  // Send to API
   const formData = new FormData();
   formData.append("file", file);
 
@@ -80,7 +78,6 @@ document.addEventListener("paste", (event) => {
     if (item.type.startsWith("image/")) {
       const file = item.getAsFile();
       if (file) {
-        // Set the file programmatically and call your upload handler
         uploadInput.files = createFileList(file);
         handleFileUpload();
       }
@@ -90,7 +87,6 @@ document.addEventListener("paste", (event) => {
   }
 });
 
-// Helper to create a DataTransfer/FileList object from a single file
 function createFileList(file) {
   const dataTransfer = new DataTransfer();
   dataTransfer.items.add(file);
